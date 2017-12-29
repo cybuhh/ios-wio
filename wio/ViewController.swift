@@ -12,7 +12,6 @@ import Firebase
 import GoogleSignIn
 import FirebaseGoogleAuthUI
 
-
 class ViewController: UIViewController, GIDSignInUIDelegate {
     @IBOutlet weak var signInButton: GIDSignInButton!
         

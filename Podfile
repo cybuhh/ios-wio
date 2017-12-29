@@ -8,5 +8,7 @@ target 'wio' do
   # Pods for wio
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'FirebaseUI/Storage'
   pod 'FirebaseUI/Google'
+  pod 'FirebaseUI/Auth'
 end
