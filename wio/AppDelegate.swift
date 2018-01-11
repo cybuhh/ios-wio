@@ -21,8 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidFinishLaunching(_ application: UIApplication) {
         FirebaseApp.configure()
-        
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
+        
         // GIDSignIn.sharedInstance().delegate = self as! GIDSignInDelegate
     }
     
@@ -54,6 +54,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
+    /*
     func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
         // Perform any operations when the user disconnects from app here.
         print("sign - firebaseAuth.signOut()")
@@ -64,7 +65,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print ("Error signing out: %@", signOutError)
         }
     }
-    
+
     func applicationDidEnterBackground(_ application: UIApplication) {
         print("applicationDidEnterBackground - firebaseAuth.signOut()")
         let firebaseAuth = Auth.auth()
@@ -73,6 +74,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } catch let signOutError as NSError {
             print ("Error signing out: %@", signOutError)
         }
-    }
+    }*/
 }
 

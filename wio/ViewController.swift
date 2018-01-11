@@ -7,21 +7,32 @@
 //
 
 import UIKit
+import FirebaseAuth
 
-import Firebase
-import GoogleSignIn
-import FirebaseGoogleAuthUI
+class ViewController: UIViewController {
+        
 
-class ViewController: UIViewController, GIDSignInUIDelegate {
-    @IBOutlet weak var signInButton: GIDSignInButton!
-        
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        GIDSignIn.sharedInstance().uiDelegate = self
-        GIDSignIn.sharedInstance().signIn()
+    override func viewDidAppear(_ animated: Bool) {
+        //        if !isLoggedIn {
+//        performSegue(withIdentifier: "show-login-segue", sender: nil)
+        //    }
     }
+    
+    @IBAction func logout(_ sender: Any) {
+//        logout
+        let firebaseAuth = Auth.auth()
+        /*do {
+            let didSignOut = try? firebaseAuth.signOut()
 
+            if let didSignOut = try? firebaseAuth.signOut(), didSignOut {
+                performSegue(withIdentifier: "show-login-segue", sender: nil)
+            }
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }*/
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
