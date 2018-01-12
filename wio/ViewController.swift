@@ -7,21 +7,29 @@
 //
 
 import UIKit
+import Firebase
 import FirebaseAuth
 
 class ViewController: UIViewController {
-        
 
     override func viewDidAppear(_ animated: Bool) {
-        //        if !isLoggedIn {
-//        performSegue(withIdentifier: "show-login-segue", sender: nil)
-        //    }
+        if Auth.auth().currentUser != nil {
+            print("current user:")
+        } else {
+            performSegue(withIdentifier: "show-login-segue", sender: nil)
+            print("no user signed in")
+        }
     }
     
     @IBAction func logout(_ sender: Any) {
+        if Auth.auth().currentUser != nil {
+            print("current user:")
+        } else {
+            print("no user signed in")
+        }
 //        logout
-        let firebaseAuth = Auth.auth()
-        /*do {
+        /*let firebaseAuth = Auth.auth()
+        do {
             let didSignOut = try? firebaseAuth.signOut()
 
             if let didSignOut = try? firebaseAuth.signOut(), didSignOut {

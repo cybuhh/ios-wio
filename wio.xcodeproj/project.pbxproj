@@ -13,8 +13,8 @@
 		4F2EDD081FEBC9910048F767 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F2EDD061FEBC9910048F767 /* Main.storyboard */; };
 		4F2EDD0A1FEBC9910048F767 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F2EDD091FEBC9910048F767 /* Assets.xcassets */; };
 		4F2EDD0D1FEBC9910048F767 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F2EDD0B1FEBC9910048F767 /* LaunchScreen.storyboard */; };
-		4F2EDD151FEBC9DB0048F767 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F2EDD141FEBC9DB0048F767 /* GoogleService-Info.plist */; };
 		4F84FE25200618F500E3210A /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F84FE24200618F500E3210A /* LoginController.swift */; };
+		71DAD18A2007CC91003B52C7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 71DAD1892007CC91003B52C7 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +27,8 @@
 		4F2EDD091FEBC9910048F767 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F2EDD0C1FEBC9910048F767 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F2EDD0E1FEBC9910048F767 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4F2EDD141FEBC9DB0048F767 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4F84FE24200618F500E3210A /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		71DAD1892007CC91003B52C7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9B1E83D8B04E7FE72A6D91B8 /* Pods_wio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -65,7 +65,7 @@
 		4F2EDD011FEBC9910048F767 /* wio */ = {
 			isa = PBXGroup;
 			children = (
-				4F2EDD141FEBC9DB0048F767 /* GoogleService-Info.plist */,
+				71DAD1892007CC91003B52C7 /* GoogleService-Info.plist */,
 				4F2EDD021FEBC9910048F767 /* AppDelegate.swift */,
 				4F2EDD041FEBC9910048F767 /* ViewController.swift */,
 				4F84FE24200618F500E3210A /* LoginController.swift */,
@@ -157,7 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F2EDD0D1FEBC9910048F767 /* LaunchScreen.storyboard in Resources */,
-				4F2EDD151FEBC9DB0048F767 /* GoogleService-Info.plist in Resources */,
+				71DAD18A2007CC91003B52C7 /* GoogleService-Info.plist in Resources */,
 				4F2EDD0A1FEBC9910048F767 /* Assets.xcassets in Resources */,
 				4F2EDD081FEBC9910048F767 /* Main.storyboard in Resources */,
 			);
